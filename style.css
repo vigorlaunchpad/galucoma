@@ -139,7 +139,7 @@ opacity: 0.85;
 
     font-family: 'Roihu-bold';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 20px;
     line-height: 32px;
     padding-top: 1rem;
@@ -182,9 +182,9 @@ opacity: 0.85;
 .galucoma-head{
     margin-top:3.4rem;
     margin-left: 3rem;
-    font-family: 'Roihu';
+    font-family: 'Roihu-bold';
     font-style: normal;
-    width: 362px;
+    width: 372px;
     height: 60px;
     font-weight: 500;
     font-size: 40px;
@@ -921,10 +921,10 @@ justify-content: center;
         }
     .t2{
         margin: auto;
-        width: 240px;
+        width: 260px;
         height: 64px;
         color: #FFFFFF;
-        font-family: 'Roihu';
+        font-family: 'Roihu-bold';
         font-style: normal;
         font-weight: 500;
         font-size: 24px;
@@ -983,7 +983,7 @@ justify-content: center;
         background: #0C51A3;
         /* border-radius: 28px; */
         margin: auto;
-
+        padding-bottom: 2rem;
         border-radius: 24px;
         margin-top: 5rem;                                
         justify-content: centers;
@@ -1025,6 +1025,7 @@ justify-content: center;
     .types-of-galucoma h2{
         text-align: center;
         margin-top: 48px;
+        font-family: 'Roihu-bold';
         margin-bottom: 2.5rem;
     }
     .closed-angle h3{
@@ -1106,7 +1107,7 @@ justify-content: center;
     .types-of-galucoma h2{
         text-align: center;
         margin-top: 20px;
-        font-family: 'Roihu';
+        font-family: 'Roihu-bold';
         font-style: normal;
         font-weight: 500;
         font-size: 38px;
@@ -1691,7 +1692,7 @@ height: 65px;
 height: 52px;
         font-family: 'Roihu';
         font-style: normal;
-        font-weight: 500;
+        font-weight: 700;
         font-size: 16px;
         line-height: 26px;
         /* or 162% */
