@@ -278,7 +278,7 @@ height: 0vh;
 
 @media (max-width: 768px) {
   .galucoma{
-    position: relative;
+    /* position: relative; */
     /* width: 344px; */
     height: 64px;
     /* bottom: 2.2rem; */
@@ -396,7 +396,24 @@ select{
     }
     
     .galucoma{
-        /* padding-top: 1.2rem; */
+            position: relative;
+    /* width: 344px; */
+    height: 64px;
+    /* bottom: 2.2rem; */
+    /* margin: auto; */
+    /* left: 801px; */
+    /* top: 190px; */
+    font-family: 'Roihu';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    padding-top: 1rem;
+    /* or 160% */
+    /* padding-top: 1.5rem; */
+    text-align: center;
+    color: #212121;
+    
     }
     
     .submit-form{
