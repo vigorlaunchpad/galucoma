@@ -2856,7 +2856,7 @@ color: #FAFAFA;
   }
 
   .slider-form{
-    position: relative;
+    /* position: relative; */
     /* bottom: 8.1rem; */
     left: 3.5rem;
     width: 100%;
