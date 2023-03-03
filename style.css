@@ -137,7 +137,7 @@ opacity: 0.85;
 
   .galucoma{
 
-    font-family: 'Roihu';
+    font-family: 'Roihu-bold';
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -488,12 +488,11 @@ select{
     .galucoma-info-heading{
 
         position: absolute;
-        font-family: Roihu;
+        font-family: 'Roihu';
         font-size: 40px;
         line-height: 90px;
         /* letter-spacing: 0em; */
         text-align: center;
-        font-family: Roihu;
         /* font-size: 40px; */
         font-weight: 500;
         /* margin-top: 2.2rem; */
@@ -568,14 +567,14 @@ top: 10%;
         }
         .symptom-heading{
             /* position: absolute; */
-width: 409px;
+width: 419px;
 height: 60px;
 left: 436px;
 /* top: 1425px; */
 margin: auto;
 /* margin-bottom: 2rem; */
 margin-top: 56px;
-font-family: 'Roihu';
+font-family: 'Roihu-bold';
 font-style: normal;
 font-weight: 500;
 font-size: 40px;
@@ -1539,24 +1538,24 @@ height: 246px;
         /* padding-bottom: 1rem; */
         /* justify-content: center; */
     }
-    .testimonials h2{
+    .t-h{
         width: 249px;
         margin: auto;
         height: 60px;
         color: #083972;
-        font-family: 'Roihu';
+        font-family: 'Roihu-bold';
         font-style: normal;
         font-weight: 700;
         font-size: 40px;
         text-align: center;
         /* margin-top: 88px; */
 }
-.testimonials p {
+.test-p {
     text-align: center;
     /* margin-top: 24px; */
     margin: auto;
     position: relative;
-    bottom: 2rem;
+    bottom: 2.1rem;
     font-family: 'Encode Sans';
     font-style: normal;
     font-weight: 500;
@@ -1871,7 +1870,7 @@ cursor: pointer;
     }
 
     .slider-heading{
-        font-family: 'Roihu';
+        font-family: 'Roihu-bold';
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
@@ -2035,7 +2034,7 @@ cursor: pointer;
 padding-top:64px ;
 padding-bottom: 54px;
 margin: auto;
-        font-family: 'Roihu';
+        font-family: 'Roihu-bold';
 font-style: normal;
 font-weight: 700;
 font-size: 40px;
