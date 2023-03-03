@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <meta charset="UTF-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galucoma</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="//db.onlinewebfonts.com/c/79203edfb0bae47a62d07eec293ff95b?family=Roihu+Thin" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<style>
+@media(min-width: 768px)
+    {
+          .slider{
+
+          }
+
+          .slider {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 40%;
+            height: 30px;
+            background-color: #ddd;
+            /* border: none; */
+            /* border-radius: 50% !important; */
+    
+            outline: none;
+          }
+          
+          .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 60px;
+            height: 60px;
+            background: url('./images/arroe.png')  center no-repeat, url('./') right center no-repeat, #ffffff;  size: 20px 20px, 20px 20px;
+          border-radius: 50%;
+          cursor: pointer;
+    }
+    
+    .slider::-moz-range-thumb {
+      width: 60px;
+      height: 60px;
+      background: url('https://image.flaticon.com/icons/png/128/271/271221.png') left center no-repeat, url('https://image.flaticon.com/icons/png/128/271/271238.png') right center no-repeat, #4CAF50;
+      background-size: 20px 20px, 20px 20px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    
+    .slider::-webkit-slider-runnable-track {
+      /* height: 10px; */
+    
+      background-color: #ECECEC;
+    /* border-radius: 50%; */
+    border-radius: 1rem;
+    }
+    
+    .slider::-moz-range-track {
+    
+    
+      height: 10px;
+      background-color: #ffffff;
+      border-radius: 5px;
+    }
+  }
+      .image_container-back{
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: auto;
+          margin-top: 5.8rem;
+          width: 100%;
+      }
+      .shadow_conatiner-back{
+        position: relative;
+          height: 70vh;
+          margin-top: 10rem;
+
+
+      }
+      .image1{
+      height: auto;
+      width: 100%;
+      }
+      .shadow1{
+      height: auto;
+      width: 100%;
+      margin-top: 5.8rem;
+      }
+</style>
+
+
+</head>
+<body>
+
+  <div class="container">    
+    <div class="navbar">
+      <a class='logo' href="">
+        <img src="images/logo.png">
+      </a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  
+      <div class="herosec">
+           <div class="image_container-back">
+               <img src="./images/desktop-road.png"  alt="image" class="image1" style="">
+           </div>
+           <div id="s1" class="shadow_container-back">
+               <img src="./images/shadow.png" alt="shadow" class="shadow1">
+           </div>
+
+        <form class="slider-form" >
+            <label class="swipe-label" id="myLabel" >Swipe to see Glaucoma vision <img src="./images/silide-arrow.png" alt=""> <img src="./images/silide-arrow.png" alt=""></label>
+            <input class="slider" type="range" name="bgopacity" id="bgopacity" value="0" min="0" max="90" step="1" onchange="rangevalue.value=value">
+        </form>
+      
+        <div class="form">
+         <div class="submit-form">
+           <h2 class="galucoma">
+                           Why wait for Glaucoma
+                           <br />warning signs?
+                       </h2>
+                       <p class="galucoma-paragraph" >Book Free Consultation Today</p>
+                       <form>
+                         <div class="form-group">
+                           <input type="text"  class="form-control form-input" placeholder="Name">
+                         </div>
+                         <div class="form-group">
+                           <input type="tel" class="form-control form-input" placeholder="Mobile Number">
+                         </div>
+                         <div class="form-group form-select">
+                           <select id="States" name="States" class="form-control select-1">
+                             <option value="" class="select-state form-input" disabled selected hidden>State</option>
+                             <option value="Tamil Nadu">Tamil Nadu</option>
+                             <option value="Karnataka">Karnataka</option>
+                             <option value="Maharashtra">Maharashtra</option>
+                             <option value="Kerala">Kerala</option>
+                             <option value="West Bengal">West Bengal</option>
+                             <option value="Odisha">Odisha</option>
+                             <option value="Andhra Pradesh">Andhra Pradesh</option>
+                             <option value="Puducherry">Puducherry</option>
+                             <option value="Gujarat">Gujarat</option>
+                             <option value="Rajasthan">Rajasthan</option>
+                             <option value="Madhya Pradesh">Madhya Pradesh</option>
+                             <option value="Jammu & Kashmir">Jammu & Kashmir</option>
+                             <option value="Andaman">Andaman</option>
+                           </select>
+                         </div>
+                         <div class="terms">
+                           <label class="">
+                             <input type="checkbox" class="">
+                             <span class="">I agree to the <a href="https://webdev.dragarwal.com/terms-of-use/">Terms &
+                                 Conditions</a> and <a href="https://webdev.dragarwal.com/terms-of-use/">Privacy Policy</a>.</span>
+                           </label>
+                         
+                     <button type="submit" class="submit-button" style="color: #FFFFFF; " >SUBMIT</button>
+                   </div>
+               </form>
+           </div>
+       </div>
+      </div>  
+
+        
+<div class="info-main">
+  <div class="galucoma-information-div">
+    <h2 class="galucoma-head" style="color: #FFFFFF;" >
+      What is <span style="color:#FDBE4F" >Glaucoma?</span> 
+    </h2>
+    <p class="galucoma-p"> 
+      Glaucoma is a set of eye conditions that damages the optic nerve. The optic nerve is located at the back of the eye, and it transmits visual signals from the eye to the brain helping in visualization. Damage to the optic nerve could result in blindness.
+    </p>
+    <div id="image-container">
+      <div >
+
+        <img class="eye-image" src="./images/image2.jpg" alt="" onclick="changeImage()" >
+        <img class="eye-image" src="./images/image3.png" alt="" onclick="changeImage()" style="display:none">
+        <img class="eye-image" src="./images/image4.png" alt="" onclick="changeImage()" style="display:none">
+        <img class="eye-image" src="./images/image5.png" alt="" onclick="changeImage()" style="display:none">
+        <img class="eye-image" src="./images/image5.1.png" alt="" onclick="changeImage()" style="display:none">
+        <img class="eye-image" src="./images/image6.png" alt="" onclick="changeImage()" style="display:none">
+        <img class="eye-image" src="./images/image7.png" alt="" onclick="changeImage()" style="display:none">
+      </div>
+
+    </div>
+    <div class="button">
+      Know more about Glaucoma
+    </div>
+  </div>
+</div>
+        <script>
+          let images = document.getElementsByClassName("eye-image");
+          let currentIndex = 0;
+      
+          function showImage(n) {
+            images[currentIndex].style.display = "none";
+            currentIndex = (n + images.length) % images.length;
+            images[currentIndex].style.display = "block";
+          }
+      
+          document.addEventListener("DOMContentLoaded", function() {
+            showImage(0);
+      
+            for (let i = 0; i < images.length; i++) {
+              images[i].addEventListener("click", function() {
+                showImage(currentIndex + 1);
+              });
+            }
+          });
+        </script>
+
+  <div class="types desktop-types">
+  <div class="types-of-galucoma">
+
+
+    <h2 style="color: white;" > <span style="color: #FDBE4F;">Types</span> of Glaucoma</h2>
+    
+    <div class="photodiv">
+      <div class="widthofphotos">
+
+        <img src="./images/normal-vison.png" alt="" class="image-one">
+        <img src="./images/side-arrow.png" alt="" style="width: 45.03px;
+        height: 58px;" class="side-arrow" >
+        
+        <img src="./images/down-arrow.png" alt="" class="down-arrow" style="width: 34px;
+        height: 43px;">
+
+        <img src="./images/earlydesktop.png" alt="" class="image-2">
+        <img src="./images/side-arrow.png" alt="" style="width: 45.03px;
+        height: 58px;" class="side-arrow-2" >
+                        <img src="./images/down-arrow.png" alt="" class="down-arrow-2" style="width: 34px;
+                        height: 43px;">
+        <img src="./images/extremedesktop.png" alt="" class="image-3" >
+      </div>
+    </div>
+
+    
+
+    <div class="angles">
+      <div class="closed-angle"> 
+    
+        <h3 styles>Closed-Angle Glaucoma</h3>
+        <p class="a-p">
+          Closed-angle glaucoma refers to a condition where the pressure inside the eyes becomes a lot higher than usual. The pressure gets built up because the fluid is not able to flow out as it should.
+        </p>
+      </div>
+      <div class="open-angle" >
+        <h3>Open-Angle Glaucoma</h3>
+        <p class="a-p">
+
+          Open-angle glaucoma is the most common form of glaucoma, resulting from a slow, gradual increase
+in eye pressure. This may lead to blindness
+if left untreated.
+
+        </p>
+
+      </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="types mobile-types">
+      <div class="types-of-galucoma">
+    
+    
+        <h2 style="color: white;" > <span style="color: #FDBE4F;">Types</span> of Glaucoma</h2>
+        
+        <div class="photodiv">
+          <div class="widthofphotos">
+    
+            <img src="./images/normal.png" alt="" class="image-one">
+            <img src="./images/side-arrow.png" alt="" style="width: 45.03px;
+            height: 58px;" class="side-arrow" >
+            
+            <img src="./images/down-arrow.png" alt="" class="down-arrow" style="width: 34px;
+            height: 43px;">
+    
+            <img src="./images/sec.png" alt="" class="image-2">
+            <img src="./images/side-arrow.png" alt="" style="width: 45.03px;
+            height: 58px;" class="side-arrow-2" >
+                            <img src="./images/down-arrow.png" alt="" class="down-arrow-2" style="width: 34px;
+                            height: 43px;">
+            <img src="./images/third.png" alt="" class="image-3" >
+          </div>
+        </div>
+    
+        
+    
+        <div class="angles">
+          <div class="closed-angle"> 
+        
+            <h3 styles>Closed-Angle Glaucoma</h3>
+            <p class="a-p">
+              Closed-angle glaucoma refers to a condition where the pressure inside the eyes becomes a lot higher than usual. The pressure gets built up because the fluid is not able to flow out as it should.
+            </p>
+          </div>
+          <div class="open-angle" >
+            <h3>Open-Angle Glaucoma</h3>
+            <p class="a-p">
+    
+              Open-angle glaucoma is the most common form of glaucoma, resulting from a slow, gradual increase
+    in eye pressure. This may lead to blindness
+    if left untreated.
+    
+            </p>
+    
+          </div>
+        </div>
+        </div>
+        </div>
+  
+  
+  <div class="galucoma-symptom-main-div">
+    <h2 class="symptom-heading" >
+      Glaucoma <span style="color: #083972;" >Symptoms</span>
+          </h2>
+          <div class="galucoma-symptom" >
+            <div class="symptom-box">
+              <img src="./images/Group1.png" alt="">
+              <p>
+                Loss of vison
+              </p>
+            </div>
+            <div class="symptom-box">
+              <img src="./images/g2.png" alt="">
+              <p>
+                Blurry vision
+              </p>
+            </div>
+            <div class="symptom-box">
+              <img src="./images/g3.png" alt="">
+              <p>
+                Early presbyopia
+              </p>
+            </div>
+            <div class="symptom-box">
+              <img src="./images/g4.png" alt="">
+              <p>
+                Pain in the eye
+              </p>
+            </div>
+            <div class="symptom-box">
+              <img src="./images/g5.png" alt="">
+              <p>
+  Presistent headache
+</p>
+            </div>
+            <div class="symptom-box">
+              <img src="./images/g6.png" alt="">
+              <p>
+                Eye redness
+              </p>
+            </div>
+            <div class="symptom-box-last">
+              <img src="./images/g7.png" alt="">
+              <p>
+                Stomach upset, nausea and vomiting
+              </p>
+            </div>
+            
+            
+          </div>
+        </div>
+        
+        <div class="treatments">
+          <h2>Treatments Provided by <span style="color: #45D3ED;" >Dr Agarwals</span></h2>
+          <p class="treatment-p" >Depending on the type of glaucoma, the doctor may treat it using the following methods or even a combination of the methods.</p>
+          <div class="cards">
+            
+            <div class="card">
+              <img src="./images/t1.png" class="t-image" alt="">
+              <p class="t-p t-d" style="color: #FFFFFF;">Eye Drops and Oral Medication</p>
+              
+              <div class="semi-oval">
+              </div>
+            
+              <div class="mobile-div">
+                <div class="rectangle">
+                  <p class="t-p" >Eye Drops and Oral Medication</p>
+                  <div class="content">
+                    <div class="collapse">
+                      <p>Eye drops reduces the production of fluids itself, thereby helping in lowering eye pressure. Eye drops could have some side effects that the doctor would inform you about. Inform your doctor about current medications and allergies if you are asked to take eye drops.</p>
+                  </div>
+                  <a style="margin-top: 1rem;" class="btn">View more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/t2.png" class="t-image" alt="">
+            <p class="t-p t-d" style="color: #FFFFFF;">Laser Surgery</p>
+            <div class="semi-oval">
+            </div>
+          
+            <div class="mobile-div">
+              <div class="rectangle">
+                <p class="t-p" >Laser Surgery</p>
+                <div class="content">
+                  <div class="collapse1">
+                    <p>
+                      In the case of open-angle glaucoma, laser surgery would help in increasing the fluid flow. In the case of closed-angle glaucoma, the fluid blockage would be stopped by procedures such as Trabeculoplasty (Opening of the drainage area), Iridotomy (Making a small opening in the iris..</p>
+                    </div>
+                    <a style="margin-top: 1rem;" class="btn1">View more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./images/t3.png" class="t-image" alt="">
+          <p class="t-p t-d" style="color: #FFFFFF;">Microsugery</p>
+          <div class="semi-oval">
+          </div>
+        
+          <div class="mobile-div">
+            <div class="rectangle">
+              <p class="t-p" >Microsugery</p>
+              <div class="content">
+                <div class="collapse2">
+                  <p>In microsurgery, to reduce eye pressure, the doctor creates a new channel to ease the flow of the fluid. Even though glaucoma is not completely curable, it could be controlled, and complete vision loss could be prevented. You could treat it before it worsens.</p>
+                </div>
+                <a style="margin-top: 1rem;" class="btn2">View more</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    
+    
+    <script>
+      const btn = document.querySelector('.btn');
+      const collapse = document.querySelector('.collapse');
+      
+      btn.addEventListener('click', function() {
+        collapse.classList.toggle('show');
+        if (collapse.classList.contains('show')) {
+          btn.innerHTML = 'View less';
+        } else {
+          btn.innerHTML = 'View more ';
+        }
+      });
+      const btn1 = document.querySelector('.btn1');
+      const collapse1 = document.querySelector('.collapse1');
+
+      btn1.addEventListener('click', function() {
+        collapse1.classList.toggle('show');
+        if (collapse1.classList.contains('show')) {
+              btn1.innerHTML = 'View less';
+            } else {
+              btn1.innerHTML = 'View more ';
+            }
+          });
+const btn2 = document.querySelector('.btn2');
+const collapse2 = document.querySelector('.collapse2');
+
+btn2.addEventListener('click', function() {
+  collapse2.classList.toggle('show');
+  if (collapse2.classList.contains('show')) {
+    btn2.innerHTML = 'View less';
+            } else {
+              btn2.innerHTML = 'View more ';
+            } 
+          });
+          </script>
+        </div>
+        
+        <div class="desktop-treatments">
+          <h2>Treatments Provided by <span style="color: #45D3ED;" >Dr Agarwals</span></h2>
+          <p class="treatment-p" >Depending on the type of glaucoma, the doctor may treat it using the following methods or even a combination of the methods.</p>
+          <div class="cards">
+            
+            <div class="desktop-card">
+              <img src="./images/t1.png" class="t-image" alt="">
+              <p class="t-p t-d" style="color: #FFFFFF;">Eye Drops and Oral Medication</p>
+              <div class="card-content" style="display: flex; flex-direction: column;" >
+                <span style="font-family: 'Encode Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                position: relative;
+                margin-bottom: 1rem;
+                text-align: center;
+                color: #212121;" >
+              Eye Drops and Oral Medication
+                </span>
+                <p class="scroll-up" style="font-family: 'Encode Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 23px;
+                /* or 164% */
+                
+                text-align: center;
+                
+                color: #062851;">
+                  Eye drops reduces the production of fluids itself, thereby helping in lowering eye pressure. Eye drops could have some side effects that the doctor would inform you about. Inform your doctor about current medications and allergies if you are asked to take eye drops.</p>
+                </div>
+                <div class="semi-oval">
+                </div>
+                
+                <div class="mobile-div">
+                  <div class="rectangle">
+                    <p class="t-p" >Eye Drops and Oral Medication</p>
+                    
+                    <div class="content">
+                  <div class="collapse">
+                    <p>Eye drops reduces the production of fluids itself, thereby helping in lowering eye pressure. Eye drops could have some side effects that the doctor would inform you about. Inform your doctor about current medications and allergies if you are asked to take eye drops.</p>
+                  </div>
+                  <a style="margin-top: 1rem;" class="btn">View more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="desktop-card">
+            <img src="./images/t2.png" class="t-image" alt="">
+            <p class="t-p t-d" style="color: #FFFFFF;">Laser Surgery</p>
+            
+            <div class="card-content" style="display: flex; flex-direction: column;" >
+              <span style="font-family: 'Encode Sans';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              position: relative;
+              margin-bottom: 1rem;
+              text-align: center;
+              color: #212121;" >
+            Laser Surgery
+          </span>
+          <p class="scroll-up" style="font-family: 'Encode Sans';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 23px;
+              /* or 164% */
+              
+              text-align: center;
+              
+              color: #062851;">
+                In the case of open-angle glaucoma, laser surgery would help in increasing the fluid flow. In the case of closed-angle glaucoma, the fluid blockage would be stopped by procedures such as Trabeculoplasty (Opening of the drainage area), Iridotomy (Making a small opening in the iris to facilitate free-flowing of fluid) and Cyclophotocoagulation (Making the fluid production lesser)</p>
+              </div>
+              
+              <div class="semi-oval">
+              </div>
+              
+            <div class="mobile-div">
+              <div class="rectangle">
+                <p class="t-p" >Microsugery</p>
+                <div class="content">
+                  <div class="collapse1">
+                    <p>
+                      Eye drops reduces the production of fluids itself, thereby helping in lowering eye pressure. Eye drops could have some side effects that the doctor would inform you about. Inform your doctor about current medications and allergies if you are asked to take eye drops.</p>
+                    </div>
+                <a style="margin-top: 1rem;" class="btn1">View more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="desktop-card">
+          <img src="./images/t3.png" class="t-image" alt="">
+          <p class="t-p t-d" style="color: #FFFFFF;">Microsugery</p>
+          <div class="card-content" style="display: flex; flex-direction: column;" >
+            <span style="font-family: 'Encode Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            position: relative;
+            margin-bottom: 1rem;
+            text-align: center;
+            color: #212121;" >
+          Microsugery
+        </span>
+        <p class="scroll-up" style="font-family: 'Encode Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 23px;
+            /* or 164% */
+            
+            text-align: center;
+            
+            color: #062851;">
+              In microsurgery, to reduce eye pressure, the doctor creates a new channel to ease the flow of the fluid. Even though glaucoma is not completely curable, it could be controlled, and complete vision loss could be prevented. You could treat it before it worsens.</p>
+            </div>
+            <div class="semi-oval">
+            </div>
+            
+            <div class="mobile-div">
+            <div class="rectangle">
+            <p class="t-p" >Microsugery</p>
+            <div class="content">
+              <div class="collapse2">
+                <p>Eye drops reduces the production of fluids itself, thereby helping in lowering eye pressure. Eye drops could have some side effects that the doctor would inform you about. Inform your doctor about current medications and allergies if you are asked to take eye drops.</p>
+              </div>
+              <a style="margin-top: 1rem;" class="btn2">View more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-section">
+    
+    <img class="hero-image" src="./images/hero.png" alt="">
+    <div class="grid-container">
+            <div class="grid-item-1">
+              <img class="hero1" src="./images/hero1.png" alt="">
+            </div>
+            
+            <div class="grid-item-2"><img class="hero2" src="./images/lastg.png" alt="">
+            </div>
+            
+            <div class="grid-item-3"><img class="hero3" src="./images/hero3.png" alt="">
+            </div>
+            <div class="grid-item-4">
+              <img class="hero4" src="./images/hero4.png" alt="">
+            </div>
+          </div>
+        </div>
+        
+        <div class="my-grid-container">
+          <div class="my-grid-item-1"><img src="./images/hero-mobile-1.png" alt=""></div>
+          <div class="my-grid-item-2"><img src="./images/mobilelast.png" alt=""></div>
+          <div class="my-grid-item-3"><img src="./images/hero-mobile-3.png" alt=""></div>
+          <div class="my-grid-item-4"><img src="./images/hero-mobile-4.png" alt=""></div>
+        </div>
+        
+        <div class="testimonials" >
+          <img src="./images/mobile-hero.jpg" class="mobile-hero" alt="">
+          <h2>Testimonial</h2>
+          <p>Watch as our patient speaks about her journey.</p>
+          
+          <iframe width="329" height="586" src="https://www.youtube.com/embed/d73uXUO2d4E" title="Patient Testimonial (Glaucoma) | Dr Agarwals Eye Hospitals |" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        
+        <div class="qna-section">
+          <h1> <span style="color: #083972">Frequently</span> Asked Questions</h1>
+          <div class="qna-question">
+            <div class="qna-question-header">How common is glaucoma disease? <svg class="arrowdown" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.53244 0.266515L5.00447 3.80182L8.47651 0.266515C8.8255 -0.0888383 9.38926 -0.0888383 9.73825 0.266515C10.0872 0.621868 10.0872 1.1959 9.73825 1.55125L5.63087 5.73349C5.28188 6.08884 4.71812 6.08884 4.36913 5.73349L0.261745 1.55125C-0.0872483 1.1959 -0.0872483 0.621868 0.261745 0.266515C0.610738 -0.0797267 1.18345 -0.0888383 1.53244 0.266515Z" fill="#002E65"/>
+              </svg>
+            </div>
+            <div class="qna-question-content">Glaucoma is a common eye disease that leads to damage to the optic nerve. This damage to the optic nerve, which transmits information from the eyes to the brain, results in vision loss. If not treated properly, visual loss may be temporary or permanent. A change in the eye’s internal fluid pressure, also known as intraocular pressure (IOP), is the most common cause of Glaucoma.
+use of irreversible blindness, accounting for 12.3% of all blindness worldwide.</div>
+          </div>
+          <div class="qna-question">
+            <div class="qna-question-header">What is the difference between open-angle and closed-angle glaucoma? <svg class="arrowdown" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.53244 0.266515L5.00447 3.80182L8.47651 0.266515C8.8255 -0.0888383 9.38926 -0.0888383 9.73825 0.266515C10.0872 0.621868 10.0872 1.1959 9.73825 1.55125L5.63087 5.73349C5.28188 6.08884 4.71812 6.08884 4.36913 5.73349L0.261745 1.55125C-0.0872483 1.1959 -0.0872483 0.621868 0.261745 0.266515C0.610738 -0.0797267 1.18345 -0.0888383 1.53244 0.266515Z" fill="#002E65"/>
+            </svg></div>
+            <div class="qna-question-content">Open-angle glaucoma: The most prevalent type of glaucoma is open-angle glaucoma. It has no symptoms at first; however, side (peripheral) vision is lost at some time, and without treatment, a person can become completely blind.
+
+              Closed-angle glaucoma: Angle-closure glaucoma, also known as closed-angle glaucoma, is a less prevalent kind of glaucoma. It happens when the drainage system in the eye gets fully obstructed, causing the pressure inside the eye to rapidly rise.
+              </div>
+          </div>
+          <div class="qna-question">
+            <div class="qna-question-header">Can hereditary be one of glaucoma’s causes?<svg class="arrowdown" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.53244 0.266515L5.00447 3.80182L8.47651 0.266515C8.8255 -0.0888383 9.38926 -0.0888383 9.73825 0.266515C10.0872 0.621868 10.0872 1.1959 9.73825 1.55125L5.63087 5.73349C5.28188 6.08884 4.71812 6.08884 4.36913 5.73349L0.261745 1.55125C-0.0872483 1.1959 -0.0872483 0.621868 0.261745 0.266515C0.610738 -0.0797267 1.18345 -0.0888383 1.53244 0.266515Z" fill="#002E65"/>
+              </svg></div>
+              <div class="qna-question-content">
+                Glaucoma can be inherited in some cases, and many experts around the world are researching genes and their effects on the disease. Glaucoma is not always hereditary, and the circumstances that lead to the beginning of the illness are yet to be fully understood.
+                </div>
+          </div>
+          <div class="qna-question">
+            <div class="qna-question-header">What is normal intraocular pressure?<svg class="arrowdown" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.53244 0.266515L5.00447 3.80182L8.47651 0.266515C8.8255 -0.0888383 9.38926 -0.0888383 9.73825 0.266515C10.0872 0.621868 10.0872 1.1959 9.73825 1.55125L5.63087 5.73349C5.28188 6.08884 4.71812 6.08884 4.36913 5.73349L0.261745 1.55125C-0.0872483 1.1959 -0.0872483 0.621868 0.261745 0.266515C0.610738 -0.0797267 1.18345 -0.0888383 1.53244 0.266515Z" fill="#002E65"/>
+              </svg></div>
+              <div class="qna-question-content">The measurement of eye pressure is in millimetres of mercury (mm Hg). The typical range for eye pressure is 12-22 mm Hg, while pressures more than 22 mm Hg is considered abnormal. Glaucoma is not caused by high eye pressure alone. It is, nonetheless, a considerable risk factor. Individuals with high eye pressure should get comprehensive eye exams by an eye care specialist on a regular basis to screen for signs of glaucoma</div>
+            </div>
+            <div class="qna-question">
+              <div class="qna-question-header">Is there a cure for glaucoma?<svg class="arrowdown" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.53244 0.266515L5.00447 3.80182L8.47651 0.266515C8.8255 -0.0888383 9.38926 -0.0888383 9.73825 0.266515C10.0872 0.621868 10.0872 1.1959 9.73825 1.55125L5.63087 5.73349C5.28188 6.08884 4.71812 6.08884 4.36913 5.73349L0.261745 1.55125C-0.0872483 1.1959 -0.0872483 0.621868 0.261745 0.266515C0.610738 -0.0797267 1.18345 -0.0888383 1.53244 0.266515Z" fill="#002E65"/>
+              </svg></div>
+              <div class="qna-question-content">
+                Unfortunately, there is no glaucoma cure, and the vision loss resulted due to it is irreversible. If someone suffers from open-angle glaucoma, it has to be monitored for the rest of their life.
+                
+                However, it is possible to slow down or stop additional vision loss using medication, laser treatment, and surgery. The most important thing to remember here is that the first step in preserving your vision is to get a diagnosis. So, never ignore it if you experience any discomfort in your vision.
+                </div>
+            </div>
+            <div class="qna-question">
+            <div class="qna-question-header">What's the difference between glaucoma and ocular hypertension?<svg class="arrowdown" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.53244 0.266515L5.00447 3.80182L8.47651 0.266515C8.8255 -0.0888383 9.38926 -0.0888383 9.73825 0.266515C10.0872 0.621868 10.0872 1.1959 9.73825 1.55125L5.63087 5.73349C5.28188 6.08884 4.71812 6.08884 4.36913 5.73349L0.261745 1.55125C-0.0872483 1.1959 -0.0872483 0.621868 0.261745 0.266515C0.610738 -0.0797267 1.18345 -0.0888383 1.53244 0.266515Z" fill="#002E65"/>
+            </svg></div>
+            <div class="qna-question-content">When the classic optic nerve and vision alterations occur, glaucoma disease is diagnosed, usually with raised eye pressure but rarely with normal pressure. Ocular hypertension occurs when the intraocular pressure is higher than usual, but the person does not display indications of glaucoma.</div>
+          </div>
+          <div class="qna-question">
+            <div class="qna-question-header">What does ‘tunnel vision’ mean?
+              <svg class="arrowdown" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.53244 0.266515L5.00447 3.80182L8.47651 0.266515C8.8255 -0.0888383 9.38926 -0.0888383 9.73825 0.266515C10.0872 0.621868 10.0872 1.1959 9.73825 1.55125L5.63087 5.73349C5.28188 6.08884 4.71812 6.08884 4.36913 5.73349L0.261745 1.55125C-0.0872483 1.1959 -0.0872483 0.621868 0.261745 0.266515C0.610738 -0.0797267 1.18345 -0.0888383 1.53244 0.266515Z" fill="#002E65"/>
+            </svg></div>
+            <div class="qna-question-content">If not treated adequately in the early stages of glaucoma disease, it can severely affect peripheral vision, leading to a condition known as ‘tunnel vision’. Tunnel vision eliminates your ‘side vision,’ limiting your field of view to images in your central vision or straight ahead.</div>
+          </div>
+          <div class="qna-question">
+            <div class="qna-question-header">How does glaucoma disease get diagnosed?
+
+              <svg class="arrowdown" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.53244 0.266515L5.00447 3.80182L8.47651 0.266515C8.8255 -0.0888383 9.38926 -0.0888383 9.73825 0.266515C10.0872 0.621868 10.0872 1.1959 9.73825 1.55125L5.63087 5.73349C5.28188 6.08884 4.71812 6.08884 4.36913 5.73349L0.261745 1.55125C-0.0872483 1.1959 -0.0872483 0.621868 0.261745 0.266515C0.610738 -0.0797267 1.18345 -0.0888383 1.53244 0.266515Z" fill="#002E65"/>
+            </svg></div>
+            <div class="qna-question-content">If you feel that you are experiencing any glaucoma symptoms, it can be detected during a fully dilated eye examination. The examination is straightforward and painless: your doctor will dilate (widen) your pupil with eye drops before checking your eyes for glaucoma and other eye issues.
+
+              A visual field test is included in the exam to examine your side vision. People with a family history of glaucoma should have their eye pressure and optic nerves tested frequently since they are at a higher risk of developing the condition.
+              </div>
+          </div>
+          <a class="view-more-button">View All</a>
+          <a class="view-less-button">View Less</a>
+        </div>
+        
+        <div class="corousal" >
+          <h2 class="coro-head" > <span style="color: #083972;">Read more </span>about Glaucoma Treatments</h2>
+          <div class="swiper mySwiper" style="margin-top: 1.5rem;">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider-card-content">
+                  <div class="slider-image">
+                    <img class="slider-image-main" src="./images/Blog-Stealth-Attack 1.png"  alt="">
+                    <h3 class="slider-heading" >Beware of the Stealth of Glaucoma!</h3>
+                    <p class="slider-para">The wild life presents an interesting variety… Some animals like the wolves hunt with a bang. They chase their prey...</p>
+                    <h3 class="slider-heading" >- Dr. Vandana Jain</h3>
+                    
+                    <a href="" class="read-more">Read More ></a>
+                  </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slider-card-content" >
+                <div class="slider-image">
+                  <img class="slider-image-main" src="./images/blog2.png"  alt="">
+                  <h3 class="slider-heading" >7 safety measures to ensure you are not driving with..</h3>
+                  <p class="slider-para">According to the World Health Organization (WHO), glaucoma is the second leading cause of blindness worldwide after cataract. It is...</p>
+                  <h3 class="slider-heading" >- Dr. Vandana Jain</h3>
+                  
+                  <a href="" class="read-more">Read More ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-card-content">
+                  <div class="slider-component">
+                    <img class="slider-image-main" src="./images/blog3.png"  alt="">
+                    <h3 class="slider-heading" >Glaucoma Facts</h3>
+                    <p class="slider-para">Glaucoma is a very misunderstood disease. Often, people don’t realize the severity, vision lost cannot be regained. Glaucoma is a...</p>
+                    <h3 class="slider-heading" >- Dr. Vandana Jain</h3>
+
+                    <a href="" class="read-more">Read More ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-card-content">
+                <div class="slider-image">
+                  <img class="slider-image-main" src="./images/blog4.png"  alt="">
+                  <h3 class="slider-heading" >Feel Pressure Behind Your Eyes</h3>
+                  <p class="slider-para">Many a times, the pressure that you feel behind your eyes does not arise from your eyes itself. Typically, it originates from one part of our head.</p>
+                  <h3 class="slider-heading" >- Dr. Vandana Jain</h3>
+                  
+                  <a href="" class="read-more">Read More ></a>
+                </div>
+              </div>
+            </div>
+          <div class="swiper-slide">
+            <div class="slider-card-content">
+              <div class="slider-image">
+                <img class="slider-image-main" src="./images/blog5.png"  alt="">
+                <h3 class="slider-heading" >Can Lifestyle modification helps control glaucoma..</h3>
+                <p class="slider-para">People today are increasingly interested in how lifestyle choices affect health. Patients with glaucoma want to help themselves and save..</p>
+                <h3 class="slider-heading" >- Dr. Vandana Jain</h3>
+                <a href="" class="read-more">Read More ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+        
+        <div class="mobile-corousal" >
+          <div class="coro-head" > <span style="color: #083972;">Read more </span>about <br> Glaucoma Treatments</div>
+          <div class="swiper mySwiper-mobile" style="margin-top: 1.5rem;">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider-card-content">
+                  <div class="slider-image">
+                    <img class="slider-image-main" src="./images/slider1.png"  alt="">
+                    <h3 class="slider-heading" >Beware of the Stealth of Glaucoma!</h3>
+                    <p class="slider-para">The wild life presents an interesting variety… Some animals like the wolves hunt with a bang. They chase their prey...</p>
+                    <h3 class="slider-heading" >- Dr. Vandana Jain</h3>
+                    
+                    <a href="" class="read-more">Read More ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-card-content">
+                  <div class="slider-image">
+                    <img class="slider-image-main" src="./images/slider2.png"  alt="">
+                    <h3 class="slider-heading" >7 safety measures to ensure you are not driving with..</h3>
+                    <p class="slider-para">According to the World Health Organization (WHO), glaucoma is the second leading cause of blindness worldwide after cataract. It is...</p>
+                    <h3 class="slider-heading" >- Dr. Vandana Jain</h3>
+                    
+                    
+                    <a href="" class="read-more">Read More ></a>
+                  </div>
+                </div>
+            </div>
+              <div class="swiper-slide">
+                <div class="slider-card-content">
+                  <div class="slider-component">
+                    <img class="slider-image-main" src="./images/slider3.png"  alt="">
+                    <h3 class="slider-heading" >Glaucoma Facts</h3>
+                    <p class="slider-para">Glaucoma is a very misunderstood disease. Often, people don’t realize the severity, vision lost cannot be regained. Glaucoma is a...</p>
+                    <h3 class="slider-heading" >- Dr. Vandana Jain</h3>
+                    
+                    <a href="" class="read-more">Read More ></a>
+                  </div>
+            </div>
+          </div>
+              <div class="swiper-slide">
+                <div class="slider-card-content">
+                  <div class="slider-image">
+                  <img class="slider-image-main" src="./images/slider4.png"  alt="">
+                  <h3 class="slider-heading" >Feel Pressure Behind Your Eyes</h3>
+                  <p class="slider-para">Many a times, the pressure that you feel behind your eyes does not arise from your eyes itself. Typically, it originates from one part of our head.</p>
+                  <h3 class="slider-heading" >- Dr. Vandana Jain</h3>
+                  
+                  <a href="" class="read-more">Read More ></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="slider-card-content">
+              <div class="slider-image">
+                <img class="slider-image-main" src="./images/slider5.png"  alt="">
+              <h3 class="slider-heading" >Can Lifestyle modification helps control glaucoma..</h3>
+              <p class="slider-para">People today are increasingly interested in how lifestyle choices affect health. Patients with glaucoma want to help themselves and save..</p>
+              <h3 class="slider-heading" >- Dr. Vandana Jain</h3>
+              
+              <a href="" class="read-more">Read More ></a>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="swiper-pagination" style="bottom: -50px;"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+          </script>
+        
+        <script>
+          var swiper = new Swiper(".mySwiper-mobile", {
+            slidesPerView: 2,
+                    spaceBetween: 200,
+                    pagination: {
+                      el: ".swiper-pagination",
+                      clickable: true,
+                    },
+                  });
+
+                  </script>
+        
+        <script>
+          const qnaQuestions = document.querySelectorAll('.qna-question');
+  const viewMoreButton = document.querySelector('.view-more-button');
+  const viewLessButton = document.querySelector('.view-less-button');
+
+qnaQuestions.forEach((qnaQuestion, index) => {
+  if (index >= 5) {
+    qnaQuestion.classList.add('hidden');
+  }
+  
+  const qnaQuestionHeader = qnaQuestion.querySelector('.qna-question-header');
+  const qnaQuestionContent = qnaQuestion.querySelector('.qna-question-content');
+  
+  qnaQuestionHeader.addEventListener('click', () => {
+    qnaQuestionContent.classList.toggle('show');
+  });
+});
+
+viewMoreButton.addEventListener('click', () => {
+  qnaQuestions.forEach((qnaQuestion, index) => {
+    if (index >= 5) {
+      qnaQuestion.classList.remove('hidden');
+    }
+  });
+
+  viewMoreButton.style.display = 'none';
+  viewLessButton.style.display = 'block';
+});
+
+viewLessButton.addEventListener('click', () => {
+  qnaQuestions.forEach((qnaQuestion, index) => {
+    if (index >= 5) {
+      qnaQuestion.classList.add('hidden');
+}
+});
+
+viewMoreButton.style.display = 'block';
+viewLessButton.style.display = 'none';
+});
+
+</script> 
+
+<script>
+  $('#bgopacity').on('input', function (value) {
+    $('#s1').css({
+      opacity: $(this).val() * '.01'
+    });
+    
+    
+    if ($(this).val() > 0.2) {
+      $('#myLabel').css('z-index', '-1');
+    } else {
+      $('#myLabel').css('z-index', '1');
+    }
+  });
+</script>
+
+
+        <script>
+
+          
+          //THIS RANGE IS FOR MOBILE
+          
+          const mobilerange = document.getElementById("mobile-opacity-range");
+          const mobileimage = document.querySelector("#mobile-image img");
+          
+          mobilerange.addEventListener("input", adjustNaturalLight);
+          
+          function adjustNaturalLight() {
+            // Set the box shadow of the image for the natural light effect
+            const opacityValue = this.value / 100; // opacity range from 0 to 0.5
+            mobileimage.style.boxShadow = "inset -5px -5px 150px 150px rgba(0, 0, 0, " + opacityValue + ")";
+            
+            // Set the opacity of the natural light effect
+            const beforePseudoElementOpacity = parseFloat(window.getComputedStyle(mobileimage).getPropertyValue('--opacity'));
+            const beforePseudoElementOpacityValue = (this.value / 100) * 0.65; // opacity range from 0 to 0.25
+            mobileimage.style.setProperty('--opacity', beforePseudoElementOpacity + beforePseudoElementOpacityValue);
+          }
+        </script>
+
+<div class="contactus">
+  <img class="contactusimg" src="./images/GlaucomaCreativeWeb.png" alt="">
+  <div class="buttons">
+    <button class="callback-button">
+      Request a Callback
+              </button>
+              
+              <button class="callus-button">
+                Call Us at 080-48193411
+              </button>
+  </div>            
+</div>
+
+<div class="footer_desktop_upper desktop_version">
+          <div>
+            <div class="foter_flex">
+              <div class="">
+                <ul>
+                  <li>
+                    <a href="javascript:void(0)">Eye Hospitals - State & UT</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Tamil Nadu</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Karnataka</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Maharashtra</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Kerala</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">West Bengal</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Odisha</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Tamil Nadu</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Andhra Pradesh</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Puducherry</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Gujarat</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Rajasthan</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Madhya Pradesh</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Andaman</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">All Eye Hospitals</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="">
+                <ul>
+                  <li>
+                    <a href="javascript:void(0)">Eye Hospitals - City</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Chennai</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Bangalore</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Mumbai</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Pune</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Hyderabad</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Coimbatore</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Bhubaneswar</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Kolkata</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Janjirwala</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Cuttack</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Ahmedabad</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Accra</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Nairobi</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="">
+                <ul>
+                  <li>
+                    <a href="javascript:void(0)">Diseases & Conditions</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Cataract</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Glaucoma</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Squint</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Diabetic Retinopathy</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Retinal Detachment</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Retinopathy Prematurity</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Macular Edema</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Traumatic Cataract</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Macular Hole</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Posterior Subcapsular Cataract</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Rosette Cataract</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Congenital Glaucoma</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">All Diseases & Conditions</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="">
+                <ul>
+                  <li>
+                    <a href="javascript:void(0)">Eye Anatomy & Treatments</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Retina</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Uvea</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Cornea</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Orbit</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Photocoagulation</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Vitrectomy</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Anti Vegf</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Dry eyes</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Scleral Buckle</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">PDEK</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Refractive Surgery</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Paediatric Ophthalmology</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">All Eye treatments</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="">
+                <ul>
+                  <li>
+                    <a href="javascript:void(0)">Blogs Categories</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Eye Care During Corona</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Lifestyle</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">General Ophthalmology</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Child Eye Care</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Contact Lens and Low Vision</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">All About Glaucoma</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">All About Lasik</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">All About Cataract</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">All about Cornea</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">All About Retina</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">All About Neuro Ophthalmology</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">All About Oculoplasty</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">All Blogs</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+</div>
+        
+        
+<section class="upper_footer pd_40 mobile_version">
+          <div class="">
+            <p style="cursor: pointer;" >Eye Hospitals - State & UT</p>
+            <p style="cursor: pointer;" >Eye Hospitals - City</p>
+            <p style="cursor: pointer;" >Diseases & Conditions</p>
+            <p style="cursor: pointer;" >Eye Anatomy & Treatments</p>
+            <p style="cursor: pointer;" >Blogs Categories</p>
+          </div>
+</section>
+
+        
+<section class="footer pd_40 last-footer">
+            <ul class="footer_content_ul">
+              <li  class="li" >About Us</li>
+              <li class="li" >Support</li>
+              <li class="li" >Privacy Policy</li>
+              <li class="li" >Terms of Use</li>
+              <br>
+              <li class="li li-last" >Careers</li>
+              <span class="copy_write">©2022 - Dr.Agarwals | All right reserved</span>
+            </ul>
+</section>
+
+
+<section class="last-footer-for-mobile">
+          <ul class="footer_content_ul">
+            <li  class="li" >About Us</li>
+            <li class="li" >Support</li>
+            <br>
+            <li class="li" >Privacy Policy</li>
+            <li class="li" >Terms of Use</li>
+            <br>
+            <li class="li li-last" >Careers</li>
+            <span class="copy_write">©2022 - Dr.Agarwals | All right reserved</span>
+          </ul>
+</section>
+        
+</div>
+ 
+    </body>
+</html>
